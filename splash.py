@@ -1,0 +1,37 @@
+from Tkinter import *
+
+def fun():
+    root.destroy()
+def splashscreen():
+    global root
+    root=Tk()
+    q=PhotoImage(file='abc.gif')
+    Label(root,image=q).grid(row=0,column=0)
+    root.geometry("1600x800")
+   
+    root.configure(bg='aquamarine3')
+    Label(root,text="Raghu Rasoi",font="times 40 bold italic",bd=20,bg='aquamarine3',relief='ridge').grid(row=0,column=2)
+    Label(root,text="Name",font="Aerial 20 bold",bg='aquamarine3').grid(row=2,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=2,column=2)
+    Label(root,text="UTKARSH RAGHUVANSHI",font="Aerial 20 bold",bg='aquamarine3').grid(row=2,column=3,sticky=E,pady=10)
+    Label(root,text="Enrollment No.",font="Aerial 20 bold",bg='aquamarine3').grid(row=3,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=3,column=2)
+    Label(root,text="161B256",font="Aerial 20 bold",bg='aquamarine3').grid(row=3,column=3,sticky=E,pady=10)
+    Label(root,text="Batch",font="Aerial 20 bold",bg='aquamarine3').grid(row=4,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=4,column=2)
+    Label(root,text="B-9(BZ)",font="Aerial 20 bold",bg='aquamarine3').grid(row=4,column=3,sticky=E,pady=10)
+    Label(root,text="Branch",font="Aerial 20 bold",bg='aquamarine3').grid(row=5,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=5,column=2)
+    Label(root,text="Computer Science",font="Aerial 20 bold",bg='aquamarine3').grid(row=5,column=3,sticky=E,pady=10)
+    Label(root,text="& Engineering",font="Aerial 20 bold",bg='aquamarine3').grid(row=6,column=3,sticky=E,pady=10)
+    Label(root,text="Course",font="Aerial 20 bold",bg='aquamarine3').grid(row=7,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=7,column=2)
+    Label(root,text="B. Tech (IInd Year)",font="Aerial 20 bold",bg='aquamarine3').grid(row=7,column=3,sticky=E,pady=10)
+    Label(root,text="E. Mail id",font="Aerial 20 bold",bg='aquamarine3').grid(row=8,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=8,column=2)
+    Label(root,text="utkarshraghuvanshi1@gmail.com",font="Aerial 20 bold",bg='aquamarine3').grid(row=8,column=3,sticky=E,pady=10)
+    Label(root,text="Submitted To",font="Aerial 20 bold",bg='aquamarine3').grid(row=9,column=1,sticky='w',pady=10)
+    Label(root,text=":",font="Aerial 20 bold",bg='aquamarine3').grid(row=9,column=2)
+    Label(root,text="Dr. Mahesh Kumar",font="Aerial 20 bold",bg='aquamarine3').grid(row=9,column=3,sticky=E,pady=10)
+    root.after(3000,fun)
+    root.mainloop()
